@@ -1,0 +1,10 @@
+# ignored files
+.DS_Store
+.project
+*.pyc
+/bin
+/include
+pyvenv.cfg
+/share
+/lib
+/lib64
