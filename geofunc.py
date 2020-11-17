@@ -37,27 +37,27 @@ def convert(orig_lat: float) -> tuple:
 """
 Uncomment this section to run script locally for your testing purposes
 """
-##in_street = input("Enter street address: ")
-##in_city = input("Enter city: ")
-##in_state = input("Enter state: ")
-##in_zip = input("Enter zip code: ")
-##in_format = input("Would you like your results in D, M, S?: \n Enter Y or N: ")
+# in_street = input("Enter street address: ")
+# in_city = input("Enter city: ")
+# in_state = input("Enter state: ")
+# in_zip = input("Enter zip code: ")
+# in_format = input("Would you like your results in D, M, S?: \n Enter Y or N: ")
 
 user_address = get_address(in_street, in_city, in_state, in_zip)
 data = get_info(user_address)
 
 
 """The following can be used for testing as well."""
-##if data['result']['addressMatches'][0]['matchedAddress'] == None:
-##    print(f"address: {in_street} {in_city} {in_state} {in_zip} was not found. Please try another address.")
-##else:
-##    long = data['result']['addressMatches'][0]['coordinates']['x']  
-##    lat = data['result']['addressMatches'][0]['coordinates']['y']
-##
-##    if in_format == 'N':
-##        print(f'longitude: {long} latitude: {lat}')
-##    else:
-##        dms_lat = convert(lat)
-##        dms_long = convert(long)
-##
-##        print(f"Latitude - Degrees: {dms_lat[0]} Minutes: {dms_lat[1]} Seconds: {dms_lat[2]} \nLongitude - Degrees: {dms_long[0]} Minutes: {dms_long[1]} Seconds: {dms_long[2]}")
+# if data['result']['addressMatches'][0]['matchedAddress'] == None:
+#    print(f"address: {in_street} {in_city} {in_state} {in_zip} was not found. Please try another address.")
+# else:
+#    long = data['result']['addressMatches'][0]['coordinates']['x']
+#    lat = data['result']['addressMatches'][0]['coordinates']['y']
+#
+#    if in_format == 'N':
+#        print(f'longitude: {long} latitude: {lat}')
+#    else:
+#        dms_lat = convert(lat)
+#        dms_long = convert(long)
+#
+#        print(f"Latitude - Degrees: {dms_lat[0]} Minutes: {dms_lat[1]} Seconds: {dms_lat[2]} \nLongitude - Degrees: {dms_long[0]} Minutes: {dms_long[1]} Seconds: {dms_long[2]}")
