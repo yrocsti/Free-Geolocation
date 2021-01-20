@@ -1,4 +1,4 @@
-# Free-Reverse-Geolocation
+# Free-Geolocation
 Use the U.S. Census API to get coords for a given address. FREE!
 Uncomment parts of the code for testing locally (only for function based).
 
